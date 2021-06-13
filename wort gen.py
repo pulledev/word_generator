@@ -42,4 +42,5 @@ while True:
   print('path not valid. please try again.')
 
 with open(export_path, 'w') as export_file:
-    for word in
+    for word in words:
+        print(word+'\n', file='export_file')
