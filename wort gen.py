@@ -11,11 +11,12 @@ kons = ["n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n","n",
 vokale = ["u","u","u","u","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","e","i","i","i","i","i","i","i","i","i","i","i","i","i","i","i","a","a","a","a","a","a","a","a","a","a","a","a","a","o","o","o","o","o",]
 anfang = ["d","d","d","d","d","d","d","s","s","s","s","s","s","s","s","s","s","e","e","e","e","i","i","i","i","w","w","w","w"]
 
+anzahlwords = int(input('number of words: '))
 
-words = list()
-while y < 500:
-    wortlaengeW = [1, 2, 2, 2, 2, 2, 2, 3, 3]
-    wortlaenge = random.randint(0, 9)
+words = set()
+while y < anzahlwords:
+    wortlaengeW = [2,2, 2, 2, 2, 2, 2, 3, 3]
+    wortlaenge = random.randint(0, 8)
 
     x = 0
     wort = []
@@ -31,9 +32,8 @@ while y < 500:
     string = ""
     for char in wort:
         string += char
-    print(string)
     y = y+1
-    words.append(wort)
+    words.add(string)
 
 while True:
   export_path = input('please specify an export path for the 500 words: ')
@@ -43,4 +43,4 @@ while True:
 
 with open(export_path, 'w') as export_file:
     for word in words:
-        print(word+'\n', file='export_file')
+        print(word, file=export_file)
