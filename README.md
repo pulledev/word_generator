@@ -1,6 +1,6 @@
 **This repository includes a word generator and a presentation on linguistics. I have also invented a new bad language.(by the way everything besides this text is in german)**
 
-* Telibanati(folder:GFS/Sprache):
+* Telibanati(folder:GFS):
 My extremely bad and cheap language ;)
 
 * Word generator:
