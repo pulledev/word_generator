@@ -14,6 +14,6 @@ Bsp.: Ich meine GFS halten
 Bsp.: Ich meine GFS halten angstvoll
 
 BSP:
-A: Reti B, tale sihe? 
-B: loha! Sahi GFS bica teti lemeka.
+* A: Reti B, tale sihe? 
+* B: loha! Sahi GFS bica teti lemeka.
 
